@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="RIGHT_TO_LEFT" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: FFF88D;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thiscalculia.FXMLAboutController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="244.0" spacing="10.0" style="-fx-background-color: F8BB51;" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button fx:id="btnHelp" mnemonicParsing="false" onAction="#help" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: F8BB51;" text="CARA BERMAIN" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: F8BB51; -fx-border-width: 3; -fx-border-style: dashed; -fx-border-color: rgb(236, 165, 40); -fx-border-radius: 7;" text="TENTANG KAMI" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_RIGHT" layoutX="276.0" layoutY="65.0" prefHeight="500.0" prefWidth="500.0" style="-fx-border-color: F8BB51; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-color: white;">
+         <children>
+            <TextArea editable="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="240.0" prefWidth="494.0" text="Aplikasi ini dikembangkan dalam rangka memenuhi tugas Mata Kuliah Interaksi Manusia dan Komputer. Aplikasi ini bertujuan untuk melatih penyandang disabilitas Dyscalculia agar terbiasa bermain dengan angka.&#10;Developer :&#10;- Dea Gustriarin&#10;- Frederik D.A.S.S.&#10;- Ilham Aminudin&#10;- Nabila Chinintya&#10;- Naufal Nurizha" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+            </TextArea>
+         </children>
+      </VBox>
+      <Button fx:id="btnBack" layoutX="751.0" layoutY="15.0" mnemonicParsing="false" onAction="#act" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: FFF88D;">
+         <graphic>
+            <MaterialDesignIconView glyphName="REPLY" size="35" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

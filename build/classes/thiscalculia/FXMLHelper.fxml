@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: FFF88D;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thiscalculia.FXMLHelperController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="244.0" spacing="10.0" style="-fx-background-color: F8BB51;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: F8BB51; -fx-border-style: dashed; -fx-border-color: rgb(236, 165, 40); -fx-border-width: 3; -fx-border-radius: 7;" text="CARA BERMAIN" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#btnAbt" prefHeight="100.0" prefWidth="150.0" style="-fx-background-color: F8BB51;" text="TENTANG KAMI" textAlignment="RIGHT" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding></VBox>
+      <Button fx:id="backBtn" layoutX="741.0" layoutY="5.0" mnemonicParsing="false" onAction="#act" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: FFF88D;">
+         <graphic>
+            <MaterialDesignIconView glyphName="REPLY" size="35" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox layoutX="266.0" layoutY="55.0" prefHeight="500.0" prefWidth="500.0" style="-fx-border-color: F8BB51; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="243.0" prefWidth="500.0">
+               <children>
+                  <Label text="Pilih tombol MULAI untuk bermain!" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@mulai.JPG" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="257.0" prefWidth="500.0">
+               <children>
+                  <Label text="Pilih angka sesuai dengan soal yang diberikan!" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@game.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
